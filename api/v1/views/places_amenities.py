@@ -8,7 +8,6 @@ from os import environ
 from flask import abort, jsonify, make_response, request
 from flasgger.utils import swag_from
 
-
 @app_views.route('places/<place_id>/amenities', methods=['GET'],
                  strict_slashes=False)
 @swag_from('documentation/place_amenity/get_places_amenities.yml',
